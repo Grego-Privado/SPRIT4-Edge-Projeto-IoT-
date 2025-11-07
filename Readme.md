@@ -14,7 +14,7 @@ Fluxo padrão **FIWARE NGSI v2**:
 2. **IoT Agent MQTT** (porta `4041`) mapeia `t→temperature` e `h→humidity` e cria/atualiza a entidade **`urn:ngsi-ld:Field:field001`** (type `SoccerField`) no **Orion** (porta `1026`).  
 3. (**Opcional**) **STH-Comet** (porta `8666`) recebe notificações e guarda histórico para consultas e dashboard.
 
-> Se tiver, adicione um diagrama aqui (`drawio.png`).
+<img src="./drawio.png" alt="Arquitetura FIWARE">
 
 ```text
 [DHT22+ESP32] --MQTT--> [IoT Agent] --NGSI v2--> [Orion] --notify--> [STH-Comet]
