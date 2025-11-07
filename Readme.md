@@ -107,8 +107,7 @@ Fluxo padrão **FIWARE NGSI v2**:
 
 5. **Consultar valores atuais (keyValues)**  
    ```text
-   GET http://{{url}}:1026/v2/entities\
-?id=urn:ngsi-ld:Field:field001&type=SoccerField&options=keyValues
+   GET http://{{url}}:1026/v2/entities\?id=urn:ngsi-ld:Field:field001&type=SoccerField&options=keyValues
    ```
 
 6. **Consultar histórico (últimos N)**  
@@ -163,16 +162,3 @@ Consuma o histórico do STH-Comet em um app Python (Flask/Plotly/Dash) ou outro 
 
 ---
 
-## Operação (checklist)
-
-- [ ] Containers FIWARE **ativos** (Orion, IoT Agent, Mosquitto, STH se usar histórico)  
-- [ ] `GET :4041/iot/about` **OK**  
-- [ ] ESP32 publicando em `/TEF/field001/attrs/{t,h}`  
-- [ ] `GET :1026/v2/entities?...keyValues` retorna `temperature` e `humidity`  
-- [ ] (Se assinado) `GET :8666/STH/...` retorna pontos de histórico
-
----
-
-## Licença
-
-Defina a licença do repositório (MIT, Apache-2.0 etc.).
