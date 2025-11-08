@@ -4,6 +4,9 @@ Projeto da equipe **Zetta Works** para **monitorar em tempo real a temperatura e
 Os dados do sensor **DHT22 + ESP32** são enviados por **MQTT** ao **IoT Agent** e viram uma entidade no **Orion Context Broker** (FIWARE).  
 Opcionalmente, armazenamos histórico no **STH-Comet** para gráficos e análises.
 
+#Prova de conceito funcional
+https://youtu.be/7siOAcRU10c
+
 ---
 
 ## Arquitetura
@@ -16,9 +19,6 @@ Fluxo padrão **FIWARE NGSI v2**:
 
 <img src="./drawio.png" alt="Arquitetura FIWARE">
 
-```text
-[DHT22+ESP32] --MQTT--> [IoT Agent] --NGSI v2--> [Orion] --notify--> [STH-Comet]
-```
 
 ---
 
